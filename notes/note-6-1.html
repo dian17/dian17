@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>17点 , 是起点</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/task.css">
+    <link rel="SHORTCUT ICON" href="../images/logo.ico">
+</head>
+
+<body>
+    <!-- 导航的部分 -->
+    <div class="nav">
+        <div class="container">
+            <h1><img src="../images/logo2.png" width="36" height="36"><span>17点</span></h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../html/course.html" class="color-blue">课程</a></li>
+                <li><a href="../html/course.html">小组</a></li>
+                <li><a href="../html/answer.html">问答</a></li>
+                <li><a href="../html/community.html">社区</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="###">登录</a>
+                <span>|</span>
+                <a href="###">注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- 导航的部分结束 -->
+    <!-- 中间功能部分 -->
+    <div class="task-each container ">
+     <h2>笔记面向对象</h2> 
+     <div>课程任务：理解JavaScript基本面向对象思想。JavaScript中对象的组成，用工厂方式去创建一个对象</div>
+    <div>学习资料：建议参考妙味课堂视频面向对象内容（1，2，3节）；</div>
+    <div>课程笔记：</div>
+    <div>必修内容：</div>
+    <div>&nbsp;&nbsp;一、什么是面向对象(Object-Oriented，OO )？</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、理解对象 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;让我们来复习一个之前学过创建对象的两种方式： </div>
+    <div><span style="background-color: rgb(255, 250, 165);-evernote-highlight:true;">自定义对象的方法（new方法）：（校准说法）</span></div>
+    <div style="box-sizing: border-box; padding: 8px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902);">
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">var person = new Object();</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">//属性</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">person.name = "DongYang";</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">person.age = 24;</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">person.job = "Software Engineer";</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">//方法</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">person.sayName = function() {</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">&nbsp;&nbsp;&nbsp;&nbsp; alert(this.name); </span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">};</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">person.sayName();</span></span>
+            </span>
+        </div>
+        <div><span style="font-size: 12px;"><span style="font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;"><span style="color: rgb(51, 51, 51);">alert(person.job);</span></span>
+            </span>
+        </div>
+    </div>
+    <div>对象字面量的方法：</div>
+    <div style="-en-codeblock: true; box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.14902); background-position: initial initial; background-repeat: initial initial;">
+        <div>var person = {</div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; //属性 </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; name: "DongYang"; </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; age: 24; </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; job = "Software Engineer"; </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; //方法 </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; sayName: Function() { </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(this.name); </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp; } </div>
+        <div>};</div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、什么是面向对象? </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、面向对象是一种通用的思想，并非只有编程中能用，任何事情都能用。 </div>
+    <div>二、JavaScript中面向对象</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、面向对象编程（OOP）的特点 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 抽象：抓住核心问题 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 封装：不考虑内部实现，只考虑功能使用 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 继承：从已有对象上继承出新的对象 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多重继承 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多态 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、对象的组成 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方法——函数：过程、动态的 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性——变量：状态、静态的 </div>
+    <div>三、第一个面向对象程序</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、为对象添加方法和属性 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this详解，事件处理中this的本质 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -window </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -this—函数属于谁 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不能在系统对象中随意附加方法、属性、否则会覆盖已有的方法、属性 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;object对象 </div>
+    <div>四、工厂方式</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、什么是工厂方式 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 原料 &nbsp;&nbsp;&nbsp;&nbsp; 加工 &nbsp;&nbsp;&nbsp;&nbsp; 出厂 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、工厂方式的 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用构造函数创建一个类 </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什么是类，对象（实例）：模具和零件 </div>
+    <div>
+        <br/>
+    </div>
+    <div>拓展内容（不建议初学者学习）：</div>
+    <div>属性类型：数据属性，访问器属性</div>   
+    </div>
+    <!-- 中间功能部分结束 -->
+    <!-- 底部部分 -->
+    <div class="footer ">
+        <div class="container">
+            <dl class="foot-dl1">
+                <dt>如何使用</dt>
+                <dd>帮助</dd>
+                <dd>课程</dd>
+                <dd>小组</dd>
+                <dd>问答</dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd>关注我们</dd>
+                <dd>加入我们</dd>
+                <dd>关于我们</dd>
+                <dd>友情链接</dd>
+            </dl>
+            <dl>
+                <dt>开发者</dt>
+                <dd>Will</dd>
+            </dl>
+            <dl class="foot-dl3">
+                <dt> 17点同学群</dt>
+                <dd>QQ群：843408</dd>
+                <dd>QQ群：843408</dd>
+                <dd>QQ群：843408</dd>
+            </dl>
+        </div>
+    </div>
+    <!-- 底部部分结束 -->
+</body>
+
+</html>

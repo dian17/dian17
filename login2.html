@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>欢迎来到豆瓣, 请登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<style type="text/css">
+form{
+    padding: 60px 60px 50px 60px;
+}
+
+</style>
+
+<body>
+    <div id="content">
+        <form id="popup_login_form" name="popup_login_form" method="post" target="_top" data-action="" autocomplete="off">
+            <h2>欢迎来到17点, 请注册</h2>
+            <fieldset>
+                <div class="field">
+                    <input type="text" name="phone" placeholder="手机号" autocomplete="off">
+                </div>
+                <div class="field">
+                    <input type="text" name="code" placeholder="验证码" autocomplete="off">
+                    <span class="tips"><a href="javascript:;" class="js-request-phone-code" data-verify="https://accounts.douban.com/j/popup/register/request_phone_code" >发验证码</a></span>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" placeholder="创建密码" autocomplete="off">
+                </div>
+                <div class="field">
+                    <input type="text" name="name" placeholder="昵称" maxlength="14" autocomplete="off">
+                </div>
+                <div class="field">
+                    <input class="btn" type="submit" value="注册17点网帐号">
+                </div>
+                <div class="field center agreement">
+                    注册即表示你同意遵守 <a href="https://www.douban.com/about/agreement" target="_blank">《17点网指导原则》</a>
+                </div>
+            </fieldset>
+        </form>
+</body>
+
+</html>
