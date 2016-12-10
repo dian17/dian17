@@ -38,6 +38,7 @@ a {
 .nav {
     height: 60px;
     background: #fafafa;
+    margin-bottom: 20px;
 }
 
 .nav h1 {

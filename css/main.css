@@ -307,6 +307,9 @@
 }
 
 /*--小组页导航部分结束---*/
+.groupnav {
+    margin-bottom: 0px;
+}
 .group-list{
 
 }
