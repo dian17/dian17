@@ -232,24 +232,188 @@
 /*-------------course结束-------------*/
 
 /*-------------group开始-------------*/
+
 .group-main{
    
 }
-
-.group-left{
-    width: 70%;
-    min-height: 400px;
-    background: #fafafa;
+.group-nav{
+    width: 100%;
+    min-height: 160px;
     float: left;
-
+    background-color: #f0f3f5;
+}
+.groupsearch{
+        height: 80px;
+        border-bottom: 1px solid #e5ebe4;
+        margin-bottom: 10px;
 
 }
-.group-right{
+.group-nav h2{
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-left: 150px;
+    color: #27a;
+}
+.group-nav form{
+    float: left;
+    width: 470px;
+    height: 35px;
+    border: 1px solid #e5ebe4;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.search-btn{
+    width: 100px;
+    height: 35px;
+    border:0px;
+    background: #e5ebe4;
+    float: left;
+    font-size: 20px;
+    color: #27a;
+}
+.search-txt{
+    width: 370px;
+    height: 35px;
+    border:0px;
+    float: left;
+}
+.group-nav ul{
+     color: #27a;
+}
+
+
+.search-recommend li{
+    float: left;
     width: 25%;
-    min-height: 400px;
-   background: #fafafa;
+}
+.search-recommend dd a{
+    float: left;
+    margin-right: 6px;
+    font-size: 12px;
+     color: #27a;
+     line-height: 12px;
+     margin-top: 5px;
+     padding: 2px;
+}
+.search-recommend dt{
+    font-weight: bold;
+    font-size: 14px;
+}
+.search-recommend dd a:hover{
+    color: #fff;
+    background: #27a;
+}
+
+/*--小组页导航部分结束---*/
+.group-list{
+
+}
+.group-all{
+    margin-top: 40px;
+}
+.list-left{
+    margin-top: 30px;
+    width: 700px;
+    float: left;
+}
+.list-left h3{
+    font-size: 22px;
+}
+.list-right{
+    margin-top: 30px;
+    width: 240px;
     float: right;
 }
+.list-right h3 a{
+        color: #f1c095;
+}
+
+.group-each{
+   border-bottom: 1px solid #e5ebe4;
+   padding-bottom: 10px;
+   margin-top: 30px;
+}
+.groupjoin{
+    float: left;
+    margin-right: 19px;
+    padding: 8px 0;
+    width: 40px;
+    height: 20px;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 13px;
+    color: #ca6445;
+    background: #fae9da;
+}
+.groupdata-main{
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+}
+.groupdata h4{
+      color: #37a;
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 5px;
+}
+.grouptext span{
+    margin-right: 18px;
+
+}
+.data-base{
+    margin: 2px 0;
+}
+.data-base span{
+    
+    color: #666; 
+}
+
+.grouplogo , .grouptext{
+    float: left;
+}
+
+.grouplogo{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+.grouplogo img{
+    width: 100%;
+    height: 100%;
+
+}
+.grouptext{
+    width: 550px;
+    height: 60px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+/*---group排名开始---*/
+.list-ranking {
+    margin-top: 30px;
+}
+.list-ranking h5{
+    margin-bottom: 10px;
+}
+.list-ranking li{
+    font-size: 12px; 
+    line-height: 2;
+    color: #37a;
+    border-bottom: 1px dashed #e5ebe4;
+
+}
+.list-ranking li span{
+    color: #666;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
 
 
 

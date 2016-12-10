@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>17点 , 是起点</title>
@@ -137,8 +136,6 @@
                     }
                
             }
-            
-
         </script>
         <!-- 轮播图部分结束 -->
         <!-- 功能部分 -->
@@ -205,7 +202,6 @@
         </div>
     </div>
     <!-- 底部部分结束 -->
-
   <!-- 豆瓣东西登录注册-->
     <div class="login-min-mask" style="display: none;"></div>
     <div class="login-min" style="display: none;">
@@ -215,62 +211,7 @@
             <iframe scrolling="no" width="478" height="462" frameborder="0" src="login2.html" style="display: none;" id="iframe2"></iframe>
         </div>
     </div>
-
 </body>
 </html>
+<script src="js/main.js"></script>
 
-<!-- 登陆注册js代码 -->
-<script type="text/javascript">
-$(function() {
-    $("#login").click(function() {
-        $(".login-min-mask").attr({
-            style: 'display: block;',
-        });
-        $('#iframe1').attr({
-            style: 'display: block;',
-        });
-        $(".login-min").attr({
-            style: 'display: block;',
-        });
-        $('.login-min-close').click(function() {
-            $(".login-min-mask").attr({
-                style: 'display: none;',
-            });
-            $('#iframe1').attr({
-                style: 'display: none;',
-            });
-            $(".login-min").attr({
-                style: 'display: none;',
-            });
-
-        });
-        /* Act on the event */
-    });
-})
-$(function() {
-    $("#register").click(function() {
-        $(".login-min-mask").attr({
-            style: 'display: block;',
-        });
-        $('#iframe2').attr({
-            style: 'display: block;',
-        });
-        $(".login-min").attr({
-            style: 'display: block;',
-        });
-        $('.login-min-close').click(function() {
-            $(".login-min-mask").attr({
-                style: 'display: none;',
-            });
-            $('#iframe1').attr({
-                style: 'display: none;',
-            });
-            $(".login-min").attr({
-                style: 'display: none;',
-            });
-
-        });
-        /* Act on the event */
-    });
-})
-</script>
